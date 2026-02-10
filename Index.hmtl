@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astra Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME SCREEN -->
+<div id="home" class="screen active">
+  <h1>🔱 ASTRA DOMINANCE</h1>
+  <button onclick="goToSetup()">▶ Start Game</button>
+</div>
+
+<!-- PLAYER SETUP -->
+<div id="setup" class="screen">
+  <h2>Enter Player Names</h2>
+  <input placeholder="Player 1" id="p1">
+  <input placeholder="Player 2" id="p2">
+  <input placeholder="Player 3" id="p3">
+  <input placeholder="Player 4" id="p4">
+  <button onclick="startGame()">✅ Confirm & Start</button>
+</div>
+
+<!-- GAME TABLE -->
+<div id="game" class="screen">
+  <div id="scoreboard"></div>
+
+  <h3>Played Cards</h3>
+  <div id="table">
+    <div class="slot">?</div>
+    <div class="slot">?</div>
+    <div class="slot">?</div>
+    <div class="slot">?</div>
+  </div>
+
+  <h3>Your Hand</h3>
+  <div id="hand"></div>
+
+  <button onclick="playCard()">🃏 Play Card</button>
+</div>
+
+<!-- RESULT OVERLAY -->
+<div id="result" class="overlay">
+  <div class="popup">
+    <h2 id="resultText"></h2>
+    <button onclick="nextRound()">▶ Continue</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
