@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.active {
+  display: block;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ff9800;
+  color: #000;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+#table {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.slot {
+  width: 60px;
+  height: 90px;
+  background: #333;
+  border-radius: 8px;
+  line-height: 90px;
+  font-size: 20px;
+}
+
+#hand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #222;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.card.selected {
+  background: #ff9800;
+  color: #000;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.popup {
+  background: #222;
+  padding: 20px;
+  margin: 30% auto;
+  width: 80%;
+  border-radius: 10px;
+}
